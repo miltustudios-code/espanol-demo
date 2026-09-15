@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet" />
+  <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet" />
+  <title>Español A2 — Interactive Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">Ñ</div>
+        <div>
+          <div class="brand-title">Español A2</div>
+          <div class="brand-subtitle">A2 Learning Hub</div>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-view="lessons"><span>▤</span> Lessons</button>
+        <button class="nav-item" data-view="study"><span>≡</span> Study Materials</button>
+        <button class="nav-item" data-view="vocabulary"><span>◫</span> Vocabulary</button>
+        <button class="nav-item" data-view="flashcards"><span>◇</span> Flashcards</button>
+        <button class="nav-item" data-view="practice"><span>✓</span> Practice</button>
+        <button class="nav-item" data-view="speed"><span>⚡</span> Speed Round</button>
+        <button class="nav-item" data-view="listening"><span>◖</span> Listening</button>
+        <button class="nav-item" data-view="weakspots"><span>◎</span> Weak Spots</button>
+        <button class="nav-item" data-view="mock"><span>◉</span> Mock Exam</button>
+        <button class="nav-item" data-view="progress"><span>↗</span> Progress</button>
+        <button class="nav-item" data-view="achievements"><span>★</span> Achievements</button>
+        <button class="nav-item" data-view="timetable"><span>▦</span> Study Plan</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="preview-pill">Demo mode</div>
+        <p>Progress saves on this device.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div>
+          <div class="eyebrow">CEFR A2 • DELE-oriented</div>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <div class="streak">🔥 <strong id="streakValue">7</strong> day streak</div>
+          <div class="avatar">A2</div>
+        </div>
+      </header>
+
+
+      <div class="demo-banner">
+        <div><strong>Demo mode</strong><span>Full interface, deliberately limited learning library.</span></div>
+        <span class="demo-status">● Local progress active</span>
+      </div>
+
+      <section class="view active" id="dashboard">
+        <div class="hero">
+          <div>
+            <div class="eyebrow light">YOUR A2 STUDY SYSTEM</div>
+            <h2>Build confidence. Find weak areas. Practise what matters.</h2>
+            <p>A working demonstration of an interactive Spanish-learning platform with progress tracking, adaptive practice and exam preparation.</p>
+            <div class="hero-actions">
+              <button class="btn btn-light" data-go="practice">Start practice</button>
+              <button class="btn btn-ghost" data-go="mock">Try mock exam</button>
+            </div>
+          </div>
+          <div class="hero-score">
+            <div class="ring" style="--p:68"><span>68%</span></div>
+            <p>Demo mastery</p>
+          </div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="card stat-card">
+            <span class="stat-label">XP earned</span>
+            <strong id="xpStat">1,280</strong>
+            <span class="stat-note">Level 7</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-label">Vocabulary mastered</span>
+            <strong id="vocabStat">24</strong>
+            <span class="stat-note">Sample set</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-label">Practice accuracy</span>
+            <strong id="accuracyStat">82%</strong>
+            <span class="stat-note">Across preview activities</span>
+          </div>
+          <div class="card stat-card">
+            <span class="stat-label">Weak areas</span>
+            <strong id="weakStat">2</strong>
+            <span class="stat-note">Updated as you practise</span>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <span class="eyebrow">TODAY</span>
+                <h3>Recommended study</h3>
+              </div>
+              <span class="badge">25 min</span>
+            </div>
+            <div class="task-list">
+              <button class="task" data-go="flashcards">
+                <span class="task-icon">◇</span>
+                <span><strong>Vocabulary review</strong><small>8 due words</small></span>
+                <span>8 min</span>
+              </button>
+              <button class="task" data-go="weakspots">
+                <span class="task-icon">◎</span>
+                <span><strong>Weak-spot practice</strong><small>Past tense + travel vocabulary</small></span>
+                <span>10 min</span>
+              </button>
+              <button class="task" data-go="listening">
+                <span class="task-icon">◖</span>
+                <span><strong>Listening drill</strong><small>Everyday conversation</small></span>
+                <span>7 min</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <div>
+                <span class="eyebrow">PREVIEW</span>
+                <h3>What the full platform can contain</h3>
+              </div>
+            </div>
+            <div class="feature-chips">
+              <span>Structured lessons</span><span>Vocabulary bank</span><span>Flashcards</span>
+              <span>Listening</span><span>Mock exams</span><span>Weak-spot engine</span>
+              <span>Achievements</span><span>Study timetable</span><span>Progress analytics</span>
+            </div>
+            <p class="muted">This public demo intentionally contains only a small sample dataset. The full learning library is not shipped with this build.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="lessons">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">STRUCTURED LEARNING</span>
+            <h2>Lessons</h2>
+            <p>Two representative A2 lessons are included in this public demo.</p>
+          </div>
+          <span class="badge">2 sample lessons</span>
+        </div>
+        <div id="lessonGrid" class="lesson-grid"></div>
+        <div id="lessonReader" class="lesson-reader hidden"></div>
+      </section>
+
+
+      <section class="view" id="study">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">A2 REFERENCE LIBRARY</span>
+            <h2>Study materials</h2>
+            <p>Compact explanations learners can return to before or after practice.</p>
+          </div>
+          <span class="badge">Sample reference set</span>
+        </div>
+        <div class="study-grid">
+          <article class="card study-card">
+            <div class="study-icon">⏱</div>
+            <span class="eyebrow">GRAMMAR</span>
+            <h3>Past tenses</h3>
+            <p>Pretérito perfecto, indefinido and imperfecto with practical time markers.</p>
+            <button class="btn btn-outline" data-study="past">Open guide</button>
+          </article>
+          <article class="card study-card">
+            <div class="study-icon">↔</div>
+            <span class="eyebrow">GRAMMAR</span>
+            <h3>Object pronouns</h3>
+            <p>Direct and indirect object pronouns with high-frequency A2 examples.</p>
+            <button class="btn btn-outline" data-study="pronouns">Open guide</button>
+          </article>
+          <article class="card study-card">
+            <div class="study-icon">✈</div>
+            <span class="eyebrow">VOCABULARY</span>
+            <h3>Travel & services</h3>
+            <p>Useful phrases for transport, accommodation, bookings and everyday problems.</p>
+            <button class="btn btn-outline" data-study="travel">Open guide</button>
+          </article>
+          <article class="card study-card">
+            <div class="study-icon">✎</div>
+            <span class="eyebrow">EXAM SKILLS</span>
+            <h3>Writing checklist</h3>
+            <p>A short checklist for producing clear A2 messages, notes and emails.</p>
+            <button class="btn btn-outline" data-study="writing">Open guide</button>
+          </article>
+        </div>
+        <div id="studyReader" class="card study-reader hidden"></div>
+      </section>
+
+      <section class="view" id="vocabulary">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">ACTIVE VOCABULARY</span>
+            <h2>Vocabulary bank</h2>
+            <p>Search, filter and review a small representative word set.</p>
+          </div>
+          <span class="badge"><span id="vocabCount">0</span> demo words</span>
+        </div>
+        <div class="toolbar card">
+          <button class="btn btn-primary" id="addCustomWord">+ Add custom word</button>
+          <input id="vocabSearch" class="input" type="search" placeholder="Search Spanish or English…" />
+          <select id="vocabTopic" class="input">
+            <option value="all">All topics</option>
+          </select>
+        </div>
+        <div id="vocabTable" class="vocab-table card"></div>
+      </section>
+
+      <section class="view" id="flashcards">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">SPACED REVIEW PREVIEW</span>
+            <h2>Flashcards</h2>
+            <p>Click the card to reveal the translation.</p>
+          </div>
+        </div>
+        <div class="flash-wrap">
+          <div class="flashcard" id="flashcard">
+            <div class="flash-inner">
+              <div class="flash-face flash-front">
+                <span class="eyebrow">SPANISH</span>
+                <h2 id="flashWord"></h2>
+                <p id="flashExample"></p>
+                <small>Click to reveal</small>
+              </div>
+              <div class="flash-face flash-back">
+                <span class="eyebrow">ENGLISH</span>
+                <h2 id="flashMeaning"></h2>
+                <p id="flashTopic"></p>
+                <small>Click to flip back</small>
+              </div>
+            </div>
+          </div>
+          <div class="flash-controls">
+            <button class="btn btn-outline" id="flashPrev">← Previous</button>
+            <span id="flashPosition"></span>
+            <button class="btn btn-primary" id="flashNext">Next →</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="practice">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">ADAPTIVE PRACTICE PREVIEW</span>
+            <h2>Quick practice</h2>
+            <p>A small question set demonstrates scoring, feedback and weak-area tracking.</p>
+          </div>
+          <span class="badge" id="practiceProgress">1 / 8</span>
+        </div>
+        <div class="quiz-shell card">
+          <div class="quiz-meta">
+            <span id="practiceTopicLabel">Grammar</span>
+            <span id="practiceScoreLabel">0 correct</span>
+          </div>
+          <h3 id="practiceQuestion"></h3>
+          <div id="practiceOptions" class="options"></div>
+          <div id="practiceFeedback" class="feedback hidden"></div>
+          <button class="btn btn-primary hidden" id="practiceNext">Next question</button>
+        </div>
+      </section>
+
+
+      <section class="view" id="speed">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">FAST RETRIEVAL</span>
+            <h2>Speed round</h2>
+            <p>Answer as many vocabulary prompts as possible before the timer ends.</p>
+          </div>
+          <span class="badge" id="speedBadge">30 sec</span>
+        </div>
+        <div class="card speed-shell">
+          <div id="speedIntro" class="speed-intro">
+            <div class="speed-bolt">⚡</div>
+            <h3>30-second vocabulary sprint</h3>
+            <p class="muted">A working preview of rapid-recall practice. The full product can contain a much larger item bank.</p>
+            <button class="btn btn-primary" id="startSpeed">Start speed round</button>
+          </div>
+          <div id="speedGame" class="hidden">
+            <div class="exam-top">
+              <span>Score: <strong id="speedScore">0</strong></span>
+              <span class="timer" id="speedTimer">00:30</span>
+            </div>
+            <div class="speed-question">
+              <span class="eyebrow">WHAT DOES THIS MEAN?</span>
+              <h2 id="speedWord"></h2>
+            </div>
+            <div id="speedOptions" class="options"></div>
+          </div>
+          <div id="speedResult" class="hidden result-card compact"></div>
+        </div>
+      </section>
+
+      <section class="view" id="listening">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">LISTENING COMPREHENSION</span>
+            <h2>Listening practice</h2>
+            <p>Two short sample activities use browser speech synthesis so no audio library is exposed.</p>
+          </div>
+        </div>
+        <div id="listeningGrid" class="lesson-grid"></div>
+      </section>
+
+      <section class="view" id="weakspots">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">PERSONALISED REVIEW</span>
+            <h2>Weak spots</h2>
+            <p>Practice mistakes automatically update these recommendations.</p>
+          </div>
+        </div>
+        <div id="weakGrid" class="weak-grid"></div>
+      </section>
+
+      <section class="view" id="mock">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">EXAM SIMULATION</span>
+            <h2>Sample mock exam</h2>
+            <p>A short demonstration only — not a complete DELE paper.</p>
+          </div>
+          <span class="badge">8 sample items</span>
+        </div>
+        <div id="mockStart" class="card exam-start">
+          <div class="exam-icon">◉</div>
+          <h3>DELE-style sample simulation</h3>
+          <p>This preview demonstrates timed progression, question navigation and final scoring without exposing a complete exam bank.</p>
+          <div class="exam-facts">
+            <span><strong>8</strong> sample questions</span>
+            <span><strong>8 min</strong> timer</span>
+            <span><strong>Instant</strong> results</span>
+          </div>
+          <button class="btn btn-primary" id="startMock">Begin sample</button>
+        </div>
+        <div id="mockShell" class="card quiz-shell hidden">
+          <div class="exam-top">
+            <span id="mockProgress">Question 1 / 8</span>
+            <span class="timer" id="mockTimer">08:00</span>
+          </div>
+          <h3 id="mockQuestion"></h3>
+          <div id="mockOptions" class="options"></div>
+          <button class="btn btn-primary" id="mockNext">Next</button>
+        </div>
+        <div id="mockResult" class="card result-card hidden"></div>
+      </section>
+
+      <section class="view" id="progress">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">LEARNING ANALYTICS</span>
+            <h2>Progress</h2>
+            <p>Illustrative analytics based on the demo activities.</p>
+          </div>
+        </div>
+        <div class="stat-grid">
+          <div class="card stat-card"><span class="stat-label">Overall mastery</span><strong>68%</strong><span class="stat-note">Demo profile</span></div>
+          <div class="card stat-card"><span class="stat-label">Questions attempted</span><strong id="attemptStat">34</strong><span class="stat-note">Including sample history</span></div>
+          <div class="card stat-card"><span class="stat-label">Study time</span><strong>4h 20m</strong><span class="stat-note">Illustrative</span></div>
+          <div class="card stat-card"><span class="stat-label">Current streak</span><strong>7 days</strong><span class="stat-note">Keep going</span></div>
+        </div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-head"><h3>Skill mastery</h3></div>
+            <div id="skillBars"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><h3>Recent activity</h3></div>
+            <div class="activity-list">
+              <div><span>Vocabulary review</span><strong>+40 XP</strong></div>
+              <div><span>Listening practice</span><strong>+25 XP</strong></div>
+              <div><span>Grammar practice</span><strong>+35 XP</strong></div>
+              <div><span>Lesson completed</span><strong>+60 XP</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="achievements">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">MOTIVATION</span>
+            <h2>Achievements</h2>
+            <p>Gamified milestones keep learners moving.</p>
+          </div>
+        </div>
+        <div id="achievementGrid" class="achievement-grid"></div>
+      </section>
+
+      <section class="view" id="timetable">
+        <div class="section-intro">
+          <div>
+            <span class="eyebrow">PERSONAL STUDY PLAN</span>
+            <h2>Study timetable</h2>
+            <p>A sample weekly plan demonstrates how the platform can guide consistent preparation.</p>
+          </div>
+        </div>
+        <div id="timetableGrid" class="timetable-grid"></div>
+      </section>
+
+      <footer class="footer">
+        <span>Interactive preview • Sample learning dataset</span>
+        <span>Designed to demonstrate the complete learning experience.</span>
+      </footer>
+    </main>
+  </div>
+
+
+  <div class="modal-backdrop hidden" id="customWordModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div><span class="eyebrow">PERSONAL VOCABULARY</span><h3>Add custom word</h3></div>
+        <button class="icon-btn" id="closeCustomWord">×</button>
+      </div>
+      <label>Spanish<input class="input" id="customSpanish" placeholder="e.g. aprovechar"></label>
+      <label>English<input class="input" id="customEnglish" placeholder="e.g. to make the most of"></label>
+      <label>Example<input class="input" id="customExample" placeholder="Optional example sentence"></label>
+      <button class="btn btn-primary" id="saveCustomWord">Save word</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
